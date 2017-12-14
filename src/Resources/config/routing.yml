@@ -1,0 +1,3 @@
+forci_epay_receive:
+    path:        /%forci_epay.receive_url%
+    defaults:    { _controller: ForciEpayBundle:Receive:receive }

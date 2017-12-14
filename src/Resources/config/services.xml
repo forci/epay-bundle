@@ -1,0 +1,18 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="forci_epay.client_class">Forci\Component\Epay\Client\EpayClient</parameter>
+        <parameter key="forci_epay.receive_url">receive</parameter>
+    </parameters>
+
+    <services>
+
+        <service id="forci_epay.client" class="%forci_epay.client_class%">
+            <argument type="expression">service(parameter('forci_epay.client_options'))</argument>
+            <argument type="expression">service(parameter('forci_epay.client_handler'))</argument>
+        </service>
+
+    </services>
+</container>

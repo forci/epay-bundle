@@ -1,0 +1,29 @@
+{
+    "name": "forci/epay-bundle",
+    "type": "symfony-bundle",
+    "description": "A Symfony2 bundle for working with the epay.bg payment gateway.",
+    "keywords": ["forci", "wucdbm", "epay", "epay.bg", "epay bundle", "epay.bg bundle"],
+    "authors": [
+        {
+            "name": "Martin Kirilov",
+            "email": "wucdbm@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "forci/epay": "~0.1",
+        "symfony/framework-bundle": "~3.0|~4.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.8",
+        "wucdbm/php-cs-fixers": "~0.1"
+    },
+    "autoload": {
+        "psr-4": { "Forci\\Bundle\\EpayBundle\\": "src" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "license": "GPL-2.0"
+}
