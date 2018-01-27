@@ -25,5 +25,5 @@
     "config": {
         "bin-dir": "bin"
     },
-    "license": "GPL-3g.0"
+    "license": "MIT"
 }
